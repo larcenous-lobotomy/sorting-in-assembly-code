@@ -32,13 +32,8 @@ loop1:  beq $s7,$t1,loop1end
         j loop1      
 loop1end: move $t2,$t8       
 #############################################################
-#Do not change any code above this line
-#Occupied registers $t1,$t2,$t3. Don't use them in your sort function.
+#Occupied registers $t1,$t2,$t3.
 #############################################################
-#function: should be written by students(sorting function)
-#The below function adds 10 to the numbers. You have to replace this with
-#your code
-#T#########################################################
 ########  SIMPLE UNOPTIMIZED BUBBLE SORT    ###################
 move $t6,$zero #counter for outer loop
 move $s5,$t1 #bound for counters to avoid array overflow
@@ -77,7 +72,6 @@ copy: move $t6,$zero
 proceed:move $s5,$zero #just a filler label   
 ##########################################################
 #############################################################
-#You need not change any code below this line
 
 #print sorted numbers
 move $s7,$zero	#i = 0
